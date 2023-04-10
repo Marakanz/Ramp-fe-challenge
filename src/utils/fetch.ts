@@ -4,7 +4,11 @@ import {
   getTransactionsByEmployee,
   setTransactionApproval,
 } from "./requests"
+<<<<<<< HEAD
 import { PaginatedRequestParams, RequestByEmployeeParams,EmptyParams, SetTransactionApprovalParams } from "./types"
+=======
+import { PaginatedRequestParams, RequestByEmployeeParams, SetTransactionApprovalParams } from "./types"
+>>>>>>> 088216e04dca725a3755c3a0b6e54d8dc36c5fbc
 
 const timeout = getTimeout()
 const mockTimeout = 1 * timeout
@@ -25,7 +29,11 @@ export function fakeFetch<TData, TParams extends object = object>(
     try {
       switch (endpoint) {
         case "employees":
+<<<<<<< HEAD
           result = getEmployees( params as EmptyParams) as unknown as TData
+=======
+          result = getEmployees() as unknown as TData
+>>>>>>> 088216e04dca725a3755c3a0b6e54d8dc36c5fbc
 
           setTimeout(() => {
             mockApiLogger({ data: { endpoint, params, result } })

@@ -18,10 +18,13 @@ export type PaginatedResponse<TData> = {
   nextPage: number | null
 }
 
+<<<<<<< HEAD
 export type EmptyParams = {
   initial: string | null
 }
 
+=======
+>>>>>>> 088216e04dca725a3755c3a0b6e54d8dc36c5fbc
 export type PaginatedRequestParams = {
   page: number | null
 }

@@ -1,7 +1,10 @@
 import {
   PaginatedRequestParams,
   PaginatedResponse,
+<<<<<<< HEAD
   EmptyParams,
+=======
+>>>>>>> 088216e04dca725a3755c3a0b6e54d8dc36c5fbc
   RequestByEmployeeParams,
   SetTransactionApprovalParams,
   Transaction,
@@ -16,12 +19,16 @@ const data: { employees: Employee[]; transactions: Transaction[] } = {
   transactions: mockData.transactions,
 }
 
+<<<<<<< HEAD
 export const getEmployees = ({ initial }: EmptyParams): Employee[] => {
   if (initial == null){
     console.log("initial is null")
   }
   return data.employees
 }
+=======
+export const getEmployees = (): Employee[] => data.employees
+>>>>>>> 088216e04dca725a3755c3a0b6e54d8dc36c5fbc
 
 export const getTransactionsPaginated = ({
   page,
